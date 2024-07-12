@@ -11,7 +11,15 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog"
 import { Label } from "@/components/ui/label"
-import { Select } from "@/components/ui/select"
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
 
 export default function Home() {
   return <div className="flex">
@@ -52,7 +60,21 @@ export default function Home() {
           <div className="mb-2">
             <label htmlFor="segmento">Segmento:</label>
             <div >
-              <Select />
+            <Select>
+      <SelectTrigger className="w-[180px]">
+        <SelectValue placeholder="Select a fruit" />
+      </SelectTrigger>
+      <SelectContent>
+        <SelectGroup>
+          <SelectLabel>Fruits</SelectLabel>
+          <SelectItem value="apple">Apple</SelectItem>
+          <SelectItem value="banana">Banana</SelectItem>
+          <SelectItem value="blueberry">Blueberry</SelectItem>
+          <SelectItem value="grapes">Grapes</SelectItem>
+          <SelectItem value="pineapple">Pineapple</SelectItem>
+        </SelectGroup>
+      </SelectContent>
+    </Select>
             </div>
           </div>
           <div className="flex flex-col mb-8">
