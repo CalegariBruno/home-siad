@@ -1,11 +1,13 @@
+'use client'
+
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import FormInput from "./form-input";
-import FormSelect from "./form-select";
-import FormTextarea from "./form-mensagem";
-import DialogComponent from "./component-dialog";
+import { FormInput } from "./form-input";
+import {FormSelect} from "./form-select";
+import {FormTextarea} from "./form-mensagem";
+import {DialogComponent} from "./component-dialog";
 
-export default function Form() {
+export function Form() {
   return (
     <div className="flex items-center justify-center w-[799px]">
       <div id="formulario" className="w-[609px] h-[904px] border rounded-[12px] shadow-lg">

@@ -1,5 +1,7 @@
+'use client'
+
 import Image from "next/image";
-import Form from "./components/form-home";
+import { Formulario } from "./components/formulario";
 
 export default function Home() {
   return (
@@ -12,7 +14,7 @@ export default function Home() {
           alt="img-grupo"
         />
       </div>
-      <Form />
+      <Formulario />
     </div>
   );
 }

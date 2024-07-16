@@ -1,6 +1,6 @@
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select";
 
-export default function FormSelect() {
+export function FormSelect() {
   return (
     <div>
       <label>Segmento:</label>
@@ -11,11 +11,10 @@ export default function FormSelect() {
         <SelectContent>
           <SelectGroup>
             <SelectLabel>Fruits</SelectLabel>
-            <SelectItem value="apple">Apple</SelectItem>
-            <SelectItem value="banana">Banana</SelectItem>
-            <SelectItem value="blueberry">Blueberry</SelectItem>
-            <SelectItem value="grapes">Grapes</SelectItem>
-            <SelectItem value="pineapple">Pineapple</SelectItem>
+            <SelectItem value="ti">TI</SelectItem>
+            <SelectItem value="saude">Saúde</SelectItem>
+            <SelectItem value="educacao">Educação</SelectItem>
+            <SelectItem value="financeiro">Financeiro</SelectItem>            
           </SelectGroup>
         </SelectContent>
       </Select>

@@ -4,7 +4,7 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
 
-export default function DialogComponent() {
+export function DialogComponent() {
   return (
     <div>
       <Dialog>
@@ -28,9 +28,9 @@ export default function DialogComponent() {
               </div>
               <div className="border my-5"></div>
               <div id="dados" className="flex flex-col gap-4">
-                <div>Fulano de tal</div>
-                <div>Segmento: tal tal</div>
-                <div className="flex flex-col gap-2">
+                <div id="nome">Fulano de tal</div>
+                <div id="segmento">Segmento: tal tal</div>
+                <div id="msg" className="flex flex-col gap-2">
                   Mensagem:
                   <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio saepe laboriosam rerum 
                      praesentium accusamus in delectus velit magnam, perspiciatis molestias quod ipsam nemo doloribus!
